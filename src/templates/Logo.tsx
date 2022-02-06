@@ -20,7 +20,7 @@ const Logo = (props: ILogoProps) => {
       style={{ alignItems: 'center', justifyContent: 'center' }}
     >
       {props.top && (
-        <ScrollToTop easing="linear" duration={500} showUnder={160}>
+        <ScrollToTop easing="linear" duration={300} showUnder={160}>
           <RocketIcon
             className="text-primary-500 stroke-current mr-1"
             style={{ width: '44', height: '44' }}
