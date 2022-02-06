@@ -1,8 +1,10 @@
+import { ReactNode } from 'react';
+
 import className from 'classnames';
 
 type IButtonProps = {
   xl?: boolean;
-  children: string;
+  children: ReactNode | string;
 };
 
 const Button = (props: IButtonProps) => {
@@ -23,12 +25,16 @@ const Button = (props: IButtonProps) => {
             @apply inline-block rounded-md text-center;
           }
 
+          .btn :global(a:hover) {
+            @apply text-white;
+          }
+
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
+            @apply text-lg font-semibold py-1 px-2;
           }
 
           .btn-xl {
-            @apply font-extrabold text-xl py-4 px-6;
+            @apply font-extrabold text-xl py-2 px-3;
           }
 
           .btn-primary {

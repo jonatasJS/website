@@ -1,14 +1,16 @@
 import Link from 'next/link';
 
-import { Background } from '../background/Background';
+// import { Background } from '../background/Background';
 import { Button } from '../button/Button';
+import { ToogleTheme } from '../button/ToogleTheme';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Background } from '../styles/Background';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background>
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         {/* <li>
@@ -17,16 +19,13 @@ const Hero = () => (
           </Link>
         </li> */}
         <li>
-          <Link href="/singin">
-            <a>Sign in</a>
-          </Link>
+          <Button xl>
+            <Link href="/singin">
+              <a>Sign in</a>
+            </Link>
+          </Button>
         </li>
-        <input type="checkbox" className="checkbox" id="checkbox" />
-        <label htmlFor="checkbox" className="label">
-          <i className="fas fa-moon"></i>
-          <i className="fas fa-sun"></i>
-          <div className="ball" />
-        </label>
+        <ToogleTheme />
       </NavbarTwoColumns>
     </Section>
 

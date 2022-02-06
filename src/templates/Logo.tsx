@@ -1,5 +1,6 @@
 import { IoMdRocket as RocketIcon } from 'react-icons/io';
-import ScrollToTop from 'react-scroll-up';
+// import ScrollToTop from 'react-scroll-up';
+import ScrollToTop from 'react-scroll-up-button'; // eslint-disable-line
 
 import { AppConfig } from '../utils/AppConfig';
 
@@ -20,7 +21,12 @@ const Logo = (props: ILogoProps) => {
       style={{ alignItems: 'center', justifyContent: 'center' }}
     >
       {props.top && (
-        <ScrollToTop easing="linear" duration={300} showUnder={160}>
+        <ScrollToTop
+          ContainerClassName="AnyClassForContainer"
+          TransitionClassName="AnyClassForTransition"
+          EasingType="easeOutBounce"
+          AnimationDuration={1000}
+        >
           <RocketIcon
             className="text-primary-500 stroke-current mr-1"
             style={{ width: '44', height: '44' }}
