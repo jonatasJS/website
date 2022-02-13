@@ -17,6 +17,11 @@ class MyDocument extends Document {
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossOrigin="anonymous"
           ></script>
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593915309329672"
+            crossorigin="anonymous"
+          ></script>
         </body>
       </Html>
     );
