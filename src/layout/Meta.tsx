@@ -22,6 +22,8 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+        <meta name="keywords" content="Criar, site, jonatas, next, rocket, gratis, fazer" />
+        <meta name="description" content="A Projeto Web desenvolve desde a sites pessoais a site corporativos, empresarial, ecommerce, dinâmicos, modernos. Os sites são desenvolvidos nas programações HTML, JAVASCRIPT, NEXTJS, REACTJS e CSS." />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
