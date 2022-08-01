@@ -1,7 +1,7 @@
 //import { Base } from '../templates/Base';
 
 // const Index = () => <Base />;
-const Index = () +> {
+const Index = () => {
 return (
   <>
 <style>
